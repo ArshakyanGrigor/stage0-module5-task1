@@ -43,7 +43,7 @@ public class ArrayTasks {
     public int totalSum(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum += i;
+            sum += arr[i];
         }
         return sum;
     }
@@ -80,7 +80,7 @@ public class ArrayTasks {
     public String[] reverseArray(String[] arr) {
         String[] reverseString = new String[arr.length];
         int j = 0;
-        for (int i = arr.length; i >= 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             reverseString[j] = arr[i];
             j++;
         }
